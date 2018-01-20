@@ -36,9 +36,9 @@ export default class User extends React.Component {
     }
 
     render() {
-        console.log(this.state.repos)
         return (
             <div>
+                <h5>Repositories of {this.props.params.username}</h5>
                 <RepoList repos={this.state.repos} />
             </div>
         )
